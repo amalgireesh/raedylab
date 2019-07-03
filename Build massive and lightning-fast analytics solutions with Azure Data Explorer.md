@@ -4,3 +4,33 @@
  
  Walk away with a solution for your frustrated customers, so they can make immediate and impactful business decisions from their data using ADX.  
  
+**Contents**
+ 
+ <!-- TOC -->
+
+- Infrastructure  
+- Ingestion  
+- Exploration
+- Self-Study  
+  - Kusto Query Language (KQL)  
+  - Power BI  
+      - PBI demo script  
+      - Connect to Help cluster  
+      - Create Power BI report  
+   - KQL – Results   
+   
+  <!-- TOC -->  
+  
+    ## Infrastructure  
+   
+   1.	Open Azure portal in private mode  
+     	https://ms.portal.azure.com 
+      
+   2. Connect  
+      
+  
+  
+   
+
+   
+   
