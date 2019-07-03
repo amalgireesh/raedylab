@@ -36,10 +36,9 @@
     
        -  https://portal.azure.com  
         
-   3. Connect with the lab temp user credential
+   3. Connect with the lab temp user credential  
    
-   
-  
+   ![Screenshot of the Azure Login Credentials.]( "Deploying Visual Studio Community 2017 icon")
       
   
   
