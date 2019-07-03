@@ -15,7 +15,7 @@
   - [KQL](#KQL) 
   - [Results](#Results)
 - [Self-Study](#Self-Study)    
-  - [Kusto Query Language (KQL)](#Kusto Query Language)   
+  - [Kusto Query Language (KQL)](#Kusto Query Language)) 
   - [Power BI](#Power BI)   
       - PBI demo script  
       - Connect to Help cluster  
@@ -37,6 +37,9 @@
         -  https://portal.azure.com  
         
    3. Connect with the lab temp user credential
+   
+   
+   ## Kusto Query Language (KQL)
       
   
   
