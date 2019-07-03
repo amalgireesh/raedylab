@@ -23,11 +23,14 @@
   
     ## Infrastructure  
    
-    1.	Open Lab  
-     -  http://bit.ly/2WCFDdz
+     1.	Open Lab 
+    
+         -  http://bit.ly/2WCFDdz  
+     
       
-    2. Open Azure portal in private mode  
-     -	 https://portal.azure.com
+     2. Open Azure portal in private mode  
+    
+        -  https://portal.azure.com
       
   
   
