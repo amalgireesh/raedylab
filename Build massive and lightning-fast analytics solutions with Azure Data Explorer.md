@@ -38,7 +38,13 @@
         
    3. Connect with the lab temp user credential  
    
-   ![Screenshot of the Azure Login Credentials.](images/azure credential.png)
+   ![Screenshot of the Azure Login Credentials.](amalgireesh/images/azure credential.png"azure login credential page")  
+   
+   4.	Open Lab Guide  
+   
+    ********
+   
+     
       
   
   
