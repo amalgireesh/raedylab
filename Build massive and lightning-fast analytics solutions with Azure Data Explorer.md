@@ -14,14 +14,14 @@
   - [Questions](#Questions)  
   - [KQL](#KQL) 
   - [Results](#Results)
-- [Self-Study](#Self-Study)  
-  - [Kusto Query Language (KQL)](#Kusto Query Language) 
-  - [Power BI](#Power BI) 
+- [Self-Study](#Self-Study)    
+  - [Kusto Query Language (KQL)](#Kusto Query Language)   
+  - [Power BI](#Power BI)   
       - PBI demo script  
       - Connect to Help cluster  
       - Create Power BI report 
       
-   - KQL – Results   
+   - [KQL – Results](#KQL – Results)
    
   <!-- TOC -->  
   
