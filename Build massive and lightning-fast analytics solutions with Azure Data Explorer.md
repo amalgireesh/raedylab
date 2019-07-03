@@ -19,7 +19,7 @@
   - [Power BI](#Power-BI)   
      - [PBI demo script](#PBI-demo-script)  
      - [Connect to Help cluster](#Connect-to-Help-cluster)  
-     - [Create Power BI report](#Create Power BI report)
+     - [Create Power BI report](#Create-Power-BI-report)
       
    - [KQL – Results](#KQL–Results)
    
