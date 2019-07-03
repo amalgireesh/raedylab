@@ -17,9 +17,9 @@
 - [Self-Study](#Self-Study)    
   - [Kusto Query Language (KQL)](#Kusto-Query-Language)) 
   - [Power BI](#Power-BI)   
-      - PBI demo script  
-      - Connect to Help cluster  
-      - Create Power BI report 
+     - [PBI demo script](#PBI-demo-script)  
+     - [Connect to Help cluster](#Connect-to-Help-cluster)  
+     - [Create Power BI report](#Create Power BI report)
       
    - [KQL – Results](#KQL–Results)
    
@@ -29,17 +29,17 @@
    
    1. Open Lab 
     
-         -  http://bit.ly/2WCFDdz  
+       -  http://bit.ly/2WCFDdz  
      
       
    2. Open Azure portal in private mode  
     
-        -  https://portal.azure.com  
+       -  https://portal.azure.com  
         
    3. Connect with the lab temp user credential
    
    
-   ## Kusto Query Language (KQL)
+  
       
   
   
