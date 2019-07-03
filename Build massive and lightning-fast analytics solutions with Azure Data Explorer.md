@@ -24,16 +24,16 @@
   
     ## Infrastructure  
    
-   1  Open Lab 
+   1. Open Lab 
     
          -  http://bit.ly/2WCFDdz  
      
       
-   2  Open Azure portal in private mode  
+   2. Open Azure portal in private mode  
     
         -  https://portal.azure.com  
         
-   3  Connect with the lab temp user credential
+   3. Connect with the lab temp user credential
       
   
   
