@@ -23,10 +23,11 @@
   
     ## Infrastructure  
    
-   1.	Open Azure portal in private mode  
-     	https://ms.portal.azure.com 
+    1.	Open Lab  
+     -  http://bit.ly/2WCFDdz
       
-   2. Connect  
+    2. Open Azure portal in private mode  
+     -	 https://portal.azure.com
       
   
   
