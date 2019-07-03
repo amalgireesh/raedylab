@@ -1,2 +1,2 @@
-# raedylab
+# readylab
 repository for summerready.
