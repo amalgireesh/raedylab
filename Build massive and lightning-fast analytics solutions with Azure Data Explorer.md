@@ -9,11 +9,14 @@
  <!-- TOC -->
 
 - [Infrastructure](#Infrastructure) 
-- Ingestion  
-- Exploration
-- Self-Study  
-  - Kusto Query Language (KQL)  
-  - Power BI  
+- [Ingestion](#Ingestion) 
+- [Exploration](#Exploration)
+  - [Questions](#Questions)  
+  - [KQL](#KQL) 
+  - [Results](#Results)
+- [Self-Study](#Self-Study)  
+  - [Kusto Query Language (KQL)](# Kusto Query Language (KQL)) 
+  - [Power BI](#Power BI) 
       - PBI demo script  
       - Connect to Help cluster  
       - Create Power BI report 
