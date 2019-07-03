@@ -38,11 +38,36 @@
         
    3. Connect with the lab temp user credential  
    
-   ![Screenshot of the Azure Login Credentials.](amalgireesh/images/azure credential.png"azure login credential page")  
+   ![Screenshot of the Azure Login Credentials.]
    
    4.	Open Lab Guide  
    
-    ********
+      xxx
+   
+   5.	Go to Azure Data Explorer Clusters  
+   
+    ![Screenshot of Azure Data Explorer Cluster]  
+    
+   6.	Click on Cluster KustoSUFFIX
+   
+    ![Screenshot of Azure Data Explorer Cluster2]  
+    
+   7. Click **data**. Then, choose Databases followed by **+Add Database**.  
+    
+    ![Screenshot of Azure Data Explorer and add database]  
+    
+   8. Specify the following properties and confirm creation to continue:
+   
+      - a.**Database name** Alias_adxdb 
+      - b.**Retention period-(in days)** : 365
+      - c.**Cache period-(in days)** : 31
+
+
+   
+   
+   
+    
+   
    
      
       
