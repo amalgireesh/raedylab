@@ -80,9 +80,7 @@
   ```
    // Create a Json ingestion mapping
 .create table SampleTable ingestion json mapping 
-"Mapping01" '[{"column":"Timestamp","path":"$.header.time"},
-{"column":"ApiVersion","path":"$.header.api_version"},
-{"column":"RawHeader","path":"$.header"},{"column":"User","path":"$.payload.user"}]'
+"Mapping01" '[{"column":"Timestamp","path":"$.header.time"},{"column":"ApiVersion","path":"$.header.api_version"},{"column":"RawHeader","path":"$.header"},{"column":"User","path":"$.payload.user"}]'
 ```
  
   
