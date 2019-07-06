@@ -35,15 +35,15 @@
 
       - Connect with the Azure **Credentials**:  
    
-   ![Screenshot of the Azure Login Credentials.]  
+   **<image01>** 
    
       - The portal opens with your credentials:  
       
-      **<image 01>
+      **<image02>**
     
-   4.	Open Lab Guide  
+ 3.	Search and select Azure Data Explorer Clusters.
    
-      xxx
+      **<image03>**
    
    5.	Go to Azure Data Explorer Clusters  
    
