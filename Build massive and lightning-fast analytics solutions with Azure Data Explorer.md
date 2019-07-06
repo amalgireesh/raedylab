@@ -84,20 +84,13 @@
 ```
 
 2.	View ingestion mapping 
-   ```
+ ```
     // View ingestion mappings
 .show table SampleTable ingestion json mappings  
-```  
-
+  ```
 3.	Ingestion from public blob 
     ```
-    // Ingest from public blob
-.ingest into table SampleTable
-@'https://westuskustopublic.blob.core.windows.net/public/SampleData-500-4394582f-668f-4d03-8bba-58f87a7e48a0.json' with (jsonMappingReference = "Mapping01")
-```  
-    
-## Exploration 
-
+ 
  
   
  
