@@ -23,23 +23,22 @@
       
    - [KQL – Results](#KQL–Results)
    
-  <!-- TOC -->  
-  
-    ## Infrastructure  
-   
-   1. Open Lab 
+  <!-- TOC -->   
+## Infrastructure  
     
-       -  http://bit.ly/2WCFDdz  
-     
+1. Open Lab: http://bit.ly/2WCFDdz  
+     - **Register Now**: Complete registration information on page  
+     - **Select LAUNCH LAB**: Opens the **Environment Details**page  
+     - Open the Lab guide: "LAB GUIDE URL"
       
-   2. Open Azure portal in private mode  
+2. Open Azure portal in private mode  
     
-       -  https://portal.azure.com  
+   -  https://portal.azure.com  
         
-   3. Connect with the lab temp user credential  
+   3. Connect with the lab temp user credential   
    
    ![Screenshot of the Azure Login Credentials.]
-   
+    
    4.	Open Lab Guide  
    
       xxx
@@ -58,9 +57,9 @@
     
    8. Specify the following properties and confirm creation to continue:
    
-      - a.**Database name** Alias_adxdb 
-      - b.**Retention period-(in days)** : 365
-      - c.**Cache period-(in days)** : 31
+      - **Database name** Alias_adxdb 
+      - **Retention period-(in days)** : 365
+      - **Cache period-(in days)** : 31
 
 
    
