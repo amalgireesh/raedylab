@@ -76,12 +76,28 @@
 
   **<image 08>**
   
-1.	Create table mapping  
-  ```
+1. Create table mapping  
+ ```
    // Create a Json ingestion mapping
 .create table SampleTable ingestion json mapping 
 "Mapping01" '[{"column":"Timestamp","path":"$.header.time"},{"column":"ApiVersion","path":"$.header.api_version"},{"column":"RawHeader","path":"$.header"},{"column":"User","path":"$.payload.user"}]'
 ```
+
+2.	View ingestion mapping 
+   ```
+    // View ingestion mappings
+.show table SampleTable ingestion json mappings  
+```  
+
+3.	Ingestion from public blob 
+    ```
+    // Ingest from public blob
+.ingest into table SampleTable
+@'https://westuskustopublic.blob.core.windows.net/public/SampleData-500-4394582f-668f-4d03-8bba-58f87a7e48a0.json' with (jsonMappingReference = "Mapping01")
+```  
+    
+## Exploration 
+
  
   
  
