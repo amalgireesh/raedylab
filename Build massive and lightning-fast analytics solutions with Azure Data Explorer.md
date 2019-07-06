@@ -49,32 +49,14 @@
      
      **<image 04>** 
     
-5.	Select Data  Databases  + Add database 
+ 5. Select **Data** from the left-hand menu, under **Databases** , and then select **+Add Database** . 
    
-   **<image 05>**  
+     **<image 05>**  
     
-   7. Click **data**. Then, choose Databases followed by **+Add Database**.  
+ 6.	In the **Azure Data Explorer Database** window:  
     
-    ![Screenshot of Azure Data Explorer and add database]  
+     **<image 06>** 
     
-   8. Specify the following properties and confirm creation to continue:
-   
-      - **Database name** Alias_adxdb 
-      - **Retention period-(in days)** : 365
-      - **Cache period-(in days)** : 31
-
-
-   
-   
-   
-    
-   
-   
-     
-      
-  
-  
-   
-
-   
-   
+      - **Database name**: **<alias>_adxdb** 
+      - **Retention period** (cold compressed data (Azure Blob Storage) : 365
+      - **Cache period**(hot compressed data (SSD)): **31**
