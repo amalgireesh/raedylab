@@ -35,23 +35,23 @@
 
       - Connect with the Azure **Credentials**:  
    
-   **<image01>** 
+   **<image 01>** 
    
       - The portal opens with your credentials:  
       
-      **<image02>**
+      **<image 02>**
     
  3.	Search and select Azure Data Explorer Clusters.
    
-      **<image03>**
+      **<image 03>**
    
-   5.	Go to Azure Data Explorer Clusters  
-   
-    ![Screenshot of Azure Data Explorer Cluster]  
+ 4.	In the **Azure Data Explorer Clusters** window, select the **KustoSUFFIX** cluster.
+     
+     **<image 04>** 
     
-   6.	Click on Cluster KustoSUFFIX
+5.	Select Data  Databases  + Add database 
    
-    ![Screenshot of Azure Data Explorer Cluster2]  
+   **<image 05>**  
     
    7. Click **data**. Then, choose Databases followed by **+Add Database**.  
     
