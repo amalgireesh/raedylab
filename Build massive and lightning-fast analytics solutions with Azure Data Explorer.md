@@ -144,13 +144,16 @@
 	Deals with unstructured data  
  
 ## Results  
-1.	SampleTable | count 
-2.	SampleTable | extend TransactionId = RawHeader.id
+1. SampleTable | count 
+
+2. SampleTable | extend TransactionId = RawHeader.id
+
 3.	SampleTable
 | extend TransactionId = RawHeader.id
 | take 10 
-4.	Option 1  
- - a.	SampleTable
+
+4. Option 1  
+  - SampleTable
 | extend recordversion =  tostring(RawHeader.api_version)
 | summarize count() by recordversion
 
