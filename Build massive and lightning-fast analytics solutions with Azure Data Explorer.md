@@ -39,7 +39,7 @@
    
       - The portal opens with your credentials:  
       
-      <image 02>
+      *<image 01>
     
    4.	Open Lab Guide  
    
