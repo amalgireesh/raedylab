@@ -110,8 +110,53 @@
 7.	Run.show queries  
 
 ## Kusto Query Language (KQL) 
-- … | count	
-  Counts records in input table (e.g. T)
+- … | **count**	
+  Counts records in input table (e.g. T)  
+  
+ -	… | **take** 10	
+ 	Get few records to become familiar with the data. No order ensured.  
+
+-	… | **where** Timestamp > ago(1) and UserId = ‘abdcdef’	
+ 	Filters on specific fields  
+  
+-	… | **project** Col1, Col2, …	
+ 	Select some columns (use if input table has many columns)  
+  
+-	…| **extend** NewCol1=Col1+Col2		
+	Introduces new calculated columns  
+ 
+-	… | **render** timechart		
+	Plots the data (in KE and KWE) while exploring  
+ 
+-	… | **summarize** count(), dcount(Id) by Col1, Col2		
+	Analytics: aggregations  
+ 
+-	… | **top** 10 by count_ desc 
+	Finds the needle in the haystack  
+ 
+-	… | **join** (…) on Key1, Key2 
+	Joins data sets 
+ 
+- … | **mvexpand** Col1,Col2 … 
+	Turns dynamic arrays to rows (multi-value expansion)  
+ 
+- … | **parse** Col1 with <pattern>…
+	Deals with unstructured data  
+ 
+## Results  
+1.	SampleTable | count 
+2.	SampleTable | extend TransactionId = RawHeader.id
+3.	SampleTable
+| extend TransactionId = RawHeader.id
+| take 10 
+4.	Option 1  
+ - a.	SampleTable
+| extend recordversion =  tostring(RawHeader.api_version)
+| summarize count() by recordversion
+
+
+ 
+
 
 
  
