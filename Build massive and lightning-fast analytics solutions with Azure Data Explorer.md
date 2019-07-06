@@ -89,12 +89,26 @@
 .show table SampleTable ingestion json mappings  
   ```
 3.	Ingestion from public blob 
-    ```  
+ ``` 
     // Ingest from public blob
-.ingest into table SampleTable
-@'https://westuskustopublic.blob.core.windows.net/public/SampleData-500-4394582f-668f-4d03-8bba-58f87a7e48a0.json'
-with (jsonMappingReference = "Mapping01")
-```
+    .ingest into table SampleTable
+   @'https://westuskustopublic.blob.core.windows.net/public/SampleData-500-4394582f-668f-4d03-8bba-58f87a7e48a0.json'
+   with (jsonMappingReference = "Mapping01")
+   ```
+
+## Exploration 
+### Questions 
+
+--- If you skipped the previous step(s), please click on database: **text** . 
+
+1.	How many lines were ingested? 
+2.	Add calculated column of Transaction Id from column RawHeader: attribute Id
+3.	Take a 10 row sample of RawHeader 
+4.	How many records were ingested from version 1 and 2?
+5.	Create a time chart with 10 minute bins of RawHeader['time']
+6.	Drop table SampleTable
+7.	Run.show queries  
+
  
   
  
