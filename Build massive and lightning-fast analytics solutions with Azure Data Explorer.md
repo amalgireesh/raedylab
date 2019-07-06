@@ -109,7 +109,7 @@
 6.	Drop table SampleTable
 7.	Run.show queries  
 
-## Kusto Query Language (KQL) 
+### Kusto Query Language (KQL) 
 - … | **count**	
   Counts records in input table (e.g. T)  
   
@@ -143,19 +143,43 @@
 - … | **parse** Col1 with <pattern>…
 	Deals with unstructured data  
  
-## Results  
+### Results  
 1. SampleTable | count 
 
-2. SampleTable | extend TransactionId = RawHeader.id
-
-3.	SampleTable
+2. SampleTable  
 | extend TransactionId = RawHeader.id
+
+3. SampleTable
+| extend TransactionId = RawHeader.id  
 | take 10 
 
 4. Option 1  
-  - SampleTable
-| extend recordversion =  tostring(RawHeader.api_version)
-| summarize count() by recordversion
+    a. SampleTable  
+   | extend recordversion =  tostring(RawHeader.api_version)  
+   | summarize count() by recordversion  
+    b. SampleTable  
+    | where tostring(RawHeader.api_version) has "1" 
+    
+5. SampleTable  
+| extend x = todatetime(RawHeader['time'])  
+| summarize count() by bin(x, 10m)  
+| render timechart  
+
+6. Drop table  
+// Drop the table  
+.drop table SampleTable  
+
+7. Show queries  
+.show queries  
+
+## Self-Study  
+  
+### Kusto Query Language (KQL)  
+
+We’ll use GitHub public data to query using Azure Data Explorer (Kusto) and visualize using Power BI.  
+
+1. Open the Browser and connect with the temporary Lab user credentials.  
+
 
 
  
