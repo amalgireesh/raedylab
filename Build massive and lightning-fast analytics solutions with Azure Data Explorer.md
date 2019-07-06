@@ -37,7 +37,7 @@
    
    ![Screenshot of the Azure Login Credentials.]  
    
-      - 	The portal opens with your credentials:  
+      - The portal opens with your credentials:  
       
       <image 02>
     
