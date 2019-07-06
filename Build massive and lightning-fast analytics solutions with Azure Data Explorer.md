@@ -58,5 +58,35 @@
      **<image 06>** 
     
       - **Database name**: **<alias>_adxdb** 
-      - **Retention period** (cold compressed data (Azure Blob Storage) : 365
+      - **Retention period** (cold compressed data (Azure Blob Storage) : **365**
       - **Cache period**(hot compressed data (SSD)): **31**
+ 
+ 7.	In **Databases**, select your new **alias_adxdb database**
+ 8. Select **Query**
+ 
+    **<image 07>**
+ 9. In the Web UI, create a table 
+  ```
+  // Create a table
+  .create table SampleTable
+  (Timestamp:datetime, ApiVersion:string, User:string, RawHeader:dynamic)
+```  
+
+## Ingestion
+
+  **<image 08>**
+  
+1.	Create table mapping  
+  ```
+   // Create a Json ingestion mapping
+.create table SampleTable ingestion json mapping 
+"Mapping01" '[{"column":"Timestamp","path":"$.header.time"},
+{"column":"ApiVersion","path":"$.header.api_version"},
+{"column":"RawHeader","path":"$.header"},{"column":"User","path":"$.payload.user"}]'
+
+ 
+ 
+  
+ 
+
+ 
