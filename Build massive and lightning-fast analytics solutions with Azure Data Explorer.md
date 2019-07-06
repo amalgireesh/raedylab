@@ -99,7 +99,7 @@
 ## Exploration 
 ### Questions 
 
---- If you skipped the previous step(s), please click on database: **text** . 
+-- If you skipped the previous step(s), please click on database: **text** . 
 
 1.	How many lines were ingested? 
 2.	Add calculated column of Transaction Id from column RawHeader: attribute Id
