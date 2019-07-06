@@ -184,7 +184,9 @@ We’ll use GitHub public data to query using Azure Data Explorer (Kusto) and vi
 
 2. Open (<https://dataexplorer.azure.com/clusters/demo12.westus/databases/GitHub>)  
   - Cluster URL: (<http://demo12.westus.kusto.windows.net>)  
-  - Database: GitHub
+  - Database: GitHub  
+  
+  
 
 
  
