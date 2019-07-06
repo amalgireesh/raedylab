@@ -110,8 +110,8 @@
 7.	Run.show queries  
 
 ## Kusto Query Language (KQL) 
---  •	… | count	
-•	Counts records in input table (e.g. T)
+- … | count	
+  Counts records in input table (e.g. T)
 
 
  
