@@ -11,9 +11,9 @@
 - [Infrastructure](#Infrastructure) 
 - [Ingestion](#Ingestion) 
 - [Exploration](#Exploration)
-  - [Questions](#Questions)  
-  - [KQL](#KQL) 
-  - [Results](#Results)
+ - [Questions](#Questions)  
+ - [KQL](#KQL) 
+ - [Results](#Results)
 - [Self-Study](#Self-Study)    
   - [Kusto Query Language (KQL)](#Kusto-Query-Language)) 
   - [Power BI](#Power-BI)   
@@ -28,7 +28,7 @@
     
 1. Open Lab: http://bit.ly/2WCFDdz  
      - **Register Now**: Complete registration information on page  
-     - **Select LAUNCH LAB**: Opens the **Environment Details**page  
+     - **Select LAUNCH LAB**: Opens the **Environment Details** page  
      - Open the Lab guide: "LAB GUIDE URL"
       
 2. Open Azure portal in private mode  
