@@ -109,6 +109,11 @@
 6.	Drop table SampleTable
 7.	Run.show queries  
 
+## Kusto Query Language (KQL) 
+--  •	… | count	
+•	Counts records in input table (e.g. T)
+
+
  
   
  
