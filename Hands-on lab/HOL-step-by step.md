@@ -12,7 +12,7 @@ Walk away with a solution for your frustrated customers, so they can make immedi
 - [Ingestion](#Ingestion) 
 - [Exploration](#Exploration)
  - [Questions](#Questions)  
- - [KQL](#KQL) 
+ - [KQL](#kusto-query-language-kql) 
  - [Results](#Results)
 - [Self-Study](#Self-Study)    
   - [Kusto Query Language (KQL)](#Kusto-Query-Language)) 
