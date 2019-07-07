@@ -21,7 +21,7 @@ Walk away with a solution for your frustrated customers, so they can make immedi
      - [Connect to Help cluster](#Connect-to-Help-cluster)  
      - [Create Power BI report](#Create-a-Power-BI-report)
       
-   - [KQL–Results](#KQL–Results)  
+   - [KQL Results](#KQL–Results)  
    - [After the hands-on lab](#After-the-hands-on-lab)
    
   <!-- TOC -->   
@@ -40,7 +40,7 @@ Walk away with a solution for your frustrated customers, so they can make immedi
 
    - The portal opens with your credentials:  
       
-   ![portal will bw opened with the credentials provide.](media/image02.png "Azure Portal")
+      ![portal will bw opened with the credentials provide.](media/image02.png "Azure Portal")
     
  3. Search and select Azure Data Explorer Clusters.
    
