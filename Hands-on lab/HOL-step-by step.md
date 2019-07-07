@@ -35,7 +35,7 @@ Walk away with a solution for your frustrated customers, so they can make immedi
 
       - Connect with the Azure **Credentials**:  
    
-   **<image 01>** 
+   (media/image01.png "Azure Portal Credential")
    
       - The portal opens with your credentials:  
       
