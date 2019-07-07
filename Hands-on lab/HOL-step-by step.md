@@ -43,7 +43,7 @@ Walk away with a solution for your frustrated customers, so they can make immedi
     
  3. Search and select Azure Data Explorer Clusters.
    
-       ![The pre-created Azure Datab Explorer is prioritized .](media/image03.png)
+       ![The pre-created Azure Datab Explorer is prioritized.](media/image03.png)
    
  4. In the **Azure Data Explorer Clusters** window, select the **KustoSUFFIX** cluster.
      
