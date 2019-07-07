@@ -19,9 +19,9 @@ Walk away with a solution for your frustrated customers, so they can make immedi
   - [Power BI](#Power-BI)   
      - [PBI demo script](#PBI-demo-script)  
      - [Connect to Help cluster](#Connect-to-Help-cluster)  
-     - [Create Power BI report](#Create-a-Power-BI-report)
+     - [Create Power BI report](#Create-a-Power-BI-report)  
       
-   - [KQL Results](#KQL–Results)  
+   - [KQL-Results](#KQL–Results)  
    - [After the hands-on lab](#After-the-hands-on-lab)
    
   <!-- TOC -->   
