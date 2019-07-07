@@ -210,18 +210,20 @@ Power BI is used to visualize the data. Note that Power BI is a visualization to
 1. Open Lab Environment Details page: <http://bit.ly/2WCFDdz> 
 2. Select **GO TO LAB ENVIRONMENT->**  
 
+![Pane which allows you to directly go the lab enivironment.](media/image09.png )
+
 ### Connect to Help cluster  
 1. Connect with the Lab **Azure Credentials** :  
 
-**<image 01>**  
+![+ Create a resource is highlighted in the navigation pane of the Azure portal, and Everything is highlighted to the right..](media/image01.png "Azure Portal")  
 
 2. Open Power BI desktop, select **Get Data**, and **More…** Type **Data Explorer** in the search box.
 
-**<image 09>**  
+![Power BI desktop for you can do data analytics.](media/image10.png)  
 
 3. Select **Azure Data Explorer (Kusto)** and **Connect** 
 
-**<image 10>**
+![You can select the database to be analysed.](media/image11.png)  
 
 4. Enter the following properties (leave all other fields empty) and then select **OK**  
  Cluster: **Help**  
@@ -229,29 +231,30 @@ Power BI is used to visualize the data. Note that Power BI is a visualization to
  Table name or Azure Data Explorer query: **StormEvents**  
  Data Connectivity mode: **Import**  
  
- **<image 11>**
+ ![Required parameters to analyse the database.](media/image12.png) 
  
  5. Expand the Samples database and select StormEvents. If the table looks ok, select Load. To make changes, select Edit. 
  
- **<image 12>** 
+ ![Image which resemble the sample database.](media/image13.png)  
  
- 6. The new StormEvents table was added to the Power BI report.
- **<image 13>**   
+ 6. The new StormEvents table was added to the Power BI report.  
+ 
+ ![Image which shows the newly events added to the Power BI.](media/image14.png)  
  
  ### Create a Power BI report  
  
  1. Create a line chart with the total number of events, by putting “Start Time” in the Axis box (not in Date Hierarchy mode) and     EventId in the Values box.  
- **<image 14>**  
+ ![Image which shows the line chart of the database.](media/image14.png)    
  2. Add a Map tile by putting “BeginLat” in the Latitude box and putting “BeginLon” in the Longitude box.  
- **<image 15>**  
+ ![Image which shows the line chart with added Map Title and with modified Latitude Box and Longitue Box.](media/image15.png)
  3. Create a Clustered column chart by putting “Event Type” in the Axis box and (count) “Event Id” in the value box.  
- **<image 16>**  
+ ![Image which shows the line chart with Event Type and Event Id.](media/image16.png)
  4. Create 4 separate card tiles with “DeathDirect”, “DeathIndirect”, “InjuriesDirect” and “InjuriesIndirect in the Fields box.  
- **<image 17>**  
- 5. Create a pie chart of reporting sources by putting the “Source” in the legend box and putting the (count) “EventId” in the values box.  
- **<image 18>**  
+ ![Image which shows the line chart with DeathDirect, InjuriesDirect and InjuriesIndirect.](media/image17.png)  
+ 5. Create a pie chart of reporting sources by putting the “Source” in the legend box and putting the (count) “EventId” in the values   box.  
+ ![Image which shows the pie chart with legend box value box.](media/image18.png)   
  6. Now arrange the tiles on the canvas and you’re ready to slice and dice.  
- **<image 19>**  
+ ![Image which shows the complete analysis of the database.](media/image19.png)
  
  ### 3 Power BI Connectors  
  1. Native Connector for Power BI
