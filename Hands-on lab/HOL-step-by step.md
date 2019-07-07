@@ -35,7 +35,7 @@ Walk away with a solution for your frustrated customers, so they can make immedi
 
       - Connect with the Azure **Credentials**:  
    
-![+ Create a resource is highlighted in the navigation pane of the Azure portal, and Everything is highlighted to the right. On the Everything blade to the right, jenkins is highlighted in the search box, and the Jenkins row is highlighted in the search results.](media/image01.png "Azure Portal")
+![+ Create a resource is highlighted in the navigation pane of the Azure portal, and Everything is highlighted to the right.](media/image01.png "Azure Portal")
 
    - The portal opens with your credentials:  
       
@@ -184,7 +184,7 @@ We’ll use GitHub public data to query using Azure Data Explorer (Kusto) and vi
 
 1. Open the Browser and connect with the temporary Lab user credentials.  
 
-![+ Create a resource is highlighted in the navigation pane of the Azure portal, and Everything is highlighted to the right. On the Everything blade to the right, jenkins is highlighted in the search box, and the Jenkins row is highlighted in the search results.](media/image01.png "Azure Portal")
+![+ Create a resource is highlighted in the navigation pane of the Azure portal, and Everything is highlighted to the right..](media/image01.png "Azure Portal")
  
 2. Open <https://dataexplorer.azure.com/clusters/demo12.westus/databases/GitHub>  
   - Cluster URL: <http://demo12.westus.kusto.windows.net>  
