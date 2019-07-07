@@ -39,23 +39,23 @@ Walk away with a solution for your frustrated customers, so they can make immedi
 
    - The portal opens with your credentials:  
       
- ![portal will bw opened with the credentials provide.](media/image02.png "Azure Portal")
+   ![portal will bw opened with the credentials provide.](media/image02.png "Azure Portal")
     
- 3.	Search and select Azure Data Explorer Clusters.
+ 3. Search and select Azure Data Explorer Clusters.
    
-      **<image 03>**
+       ![The pre-created Azure Datab Explorer is prioritized .](media/image03.png)
    
- 4.	In the **Azure Data Explorer Clusters** window, select the **KustoSUFFIX** cluster.
+ 4. In the **Azure Data Explorer Clusters** window, select the **KustoSUFFIX** cluster.
      
-     **<image 04>** 
+       ![selection of the required database.](media/image04.png)
     
  5. Select **Data** from the left-hand menu, under **Databases** , and then select **+Add Database** . 
    
-     **<image 05>**  
+       ![Create a new database in the cluster.](media/image05.png)*  
     
  6. In the **Azure Data Explorer Database** window:  
     
-     **<image 06>** 
+       ![Create a new database in the cluster.](media/image06.png)*
     
       - **Database name**: **<alias>_adxdb** 
       - **Retention period** (cold compressed data (Azure Blob Storage) : **365**
