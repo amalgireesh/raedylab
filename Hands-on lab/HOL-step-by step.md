@@ -51,20 +51,22 @@ Walk away with a solution for your frustrated customers, so they can make immedi
     
  5. Select **Data** from the left-hand menu, under **Databases** , and then select **+Add Database** . 
    
-       ![Create a new database in the cluster.](media/image05.png)*  
+       ![Create a new database in the cluster.](media/image05.png)  
     
  6. In the **Azure Data Explorer Database** window:  
     
-       ![Create a new database in the cluster.](media/image06.png)*
+       ![adding parameters to the database.](media/image06.png)
     
       - **Database name**: **<alias>_adxdb** 
       - **Retention period** (cold compressed data (Azure Blob Storage) : **365**
       - **Cache period**(hot compressed data (SSD)): **31**
  
  7. In **Databases**, select your new **alias_adxdb database**
+ 
  8. Select **Query**
  
-    **<image 07>**
+   ![writing Query fo the data ingestion section.](media/image07.png)
+   
  9. In the Web UI, create a table 
   ```
   // Create a table
@@ -74,7 +76,8 @@ Walk away with a solution for your frustrated customers, so they can make immedi
 
 ## Ingestion
 
-  **<image 08>**
+  
+   ![Writing Query for data ingestion mapping etc.](media/image08.png)
   
 1. Create table mapping  
 ```
@@ -181,8 +184,8 @@ We’ll use GitHub public data to query using Azure Data Explorer (Kusto) and vi
 
 1. Open the Browser and connect with the temporary Lab user credentials.  
 
-**<image 01>**  
-
+![+ Create a resource is highlighted in the navigation pane of the Azure portal, and Everything is highlighted to the right. On the Everything blade to the right, jenkins is highlighted in the search box, and the Jenkins row is highlighted in the search results.](media/image01.png "Azure Portal")
+ 
 2. Open <https://dataexplorer.azure.com/clusters/demo12.westus/databases/GitHub>  
   - Cluster URL: <http://demo12.westus.kusto.windows.net>  
   - Database: GitHub  
@@ -211,18 +214,27 @@ Power BI is used to visualize the data. Note that Power BI is a visualization to
 1. Connect with the Lab **Azure Credentials** :  
 
 **<image 01>**  
+
 2. Open Power BI desktop, select **Get Data**, and **More…** Type **Data Explorer** in the search box.
+
 **<image 09>**  
+
 3. Select **Azure Data Explorer (Kusto)** and **Connect** 
+
 **<image 10>**
+
 4. Enter the following properties (leave all other fields empty) and then select **OK**  
  Cluster: **Help**  
  Database: **Samples**  
  Table name or Azure Data Explorer query: **StormEvents**  
  Data Connectivity mode: **Import**  
+ 
  **<image 11>**
- 5. Expand the Samples database and select StormEvents. If the table looks ok, select Load. To make changes, select Edit.  
- **<image 12>**  
+ 
+ 5. Expand the Samples database and select StormEvents. If the table looks ok, select Load. To make changes, select Edit. 
+ 
+ **<image 12>** 
+ 
  6. The new StormEvents table was added to the Power BI report.
  **<image 13>**   
  
