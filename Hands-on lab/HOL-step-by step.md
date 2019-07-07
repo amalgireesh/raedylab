@@ -187,7 +187,7 @@ We’ll use GitHub public data to query using Azure Data Explorer (Kusto) and vi
   - Cluster URL: <http://demo12.westus.kusto.windows.net>  
   - Database: GitHub  
   
-### Heading Missing
+### Questions to try out
   
 1. What was the date yesterday?  
 2. How many events were in the last 60 days?  
