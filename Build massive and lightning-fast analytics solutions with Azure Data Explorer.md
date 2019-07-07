@@ -1,8 +1,8 @@
 #  Build massive and lightning-fast analytics solutions with Azure Data Explorer  
  
- Looking to help your customers make business decisions with immediate impact based on real-time terabyte/petabyte of data in seconds? In this session, you will build a near-real-time analytical solution with Azure Data Explorer (ADX), which supports interactive adhoc queries of terabyte/petabyte data.  
+Looking to help your customers make business decisions with immediate impact based on real-time terabyte/petabyte of data in seconds? In this session, you will build a near-real-time analytical solution with Azure Data Explorer (ADX), which supports interactive adhoc queries of terabyte/petabyte data.  
  
- Walk away with a solution for your frustrated customers, so they can make immediate and impactful business decisions from their data using ADX.  
+Walk away with a solution for your frustrated customers, so they can make immediate and impactful business decisions from their data using ADX.  
  
 **Contents**
  
@@ -94,8 +94,9 @@
  // Ingest from public blob
  .ingest into table SampleTable
  @'https://westuskustopublic.blob.core.windows.net/public/SampleData-500-4394582f-668f-4d03-8bba-58f87a7e48a0.json'
- with (jsonMappingReference = "Mapping01")
-   ```
+ with (jsonMappingReference = "Mapping01")  
+   ```  
+  > **Note**: Must follow the query syntax.
 
 ## Exploration 
 ### Questions 
@@ -123,7 +124,7 @@
 - … | **project** Col1, Col2, …	
  	Select some columns (use if input table has many columns)  
   
-- …| **extend** NewCol1=Col1+Col2		
+- … | **extend** NewCol1=Col1+Col2		
 	Introduces new calculated columns  
  
 - … | **render** timechart		
@@ -185,6 +186,145 @@ We’ll use GitHub public data to query using Azure Data Explorer (Kusto) and vi
 2. Open (<https://dataexplorer.azure.com/clusters/demo12.westus/databases/GitHub>)  
   - Cluster URL: (<http://demo12.westus.kusto.windows.net>)  
   - Database: GitHub  
+  
+### Heading Missing
+  
+1. What was the date yesterday?  
+2. How many events were in the last 60 days?  
+3. Take a sample of 10 rows of your data?  
+4. What is the number of Repos overall?  
+5. What is the number of unique Repos values?  
+6. What is the number  of unique Repos names?  
+7. Linus Torvalds, actor on GitHub is ‘torvalds’ (Actor.display_name). What are the top 3 event Types to which he contributed?    
+8. How many Torvalds are there? How many events did they produce?  
+9. What are the top 10 most watched Repos?  
+10. (**) Plot the history of all of the events for the past 2 years for Repos from #9. 
+
+## Power BI  
+Power BI is used to visualize the data. Note that Power BI is a visualization tool with data size limitations. Default: 500,000 records and 700MB data size. 
+
+### PBI demo script  
+1. Open Lab Environment Details page: (<http://bit.ly/2WCFDdz>)  
+2. Select **GO TO LAB ENVIRONMENT->**  
+
+### Connect to Help cluster  
+1. Connect with the Lab **Azure Credentials** :  
+
+**<image 01>**  
+2. Open Power BI desktop, select **Get Data**, and **More…** Type **Data Explorer** in the search box.
+**<image 09>**  
+3. Select **Azure Data Explorer (Kusto)** and **Connect** 
+**<image 10>**
+4. Enter the following properties (leave all other fields empty) and then select **OK**  
+ Cluster: **Help**  
+ Database: **Samples**  
+ Table name or Azure Data Explorer query: **StormEvents**  
+ Data Connectivity mode: **Import**  
+ **<image 11>**
+ 5. Expand the Samples database and select StormEvents. If the table looks ok, select Load. To make changes, select Edit.  
+ **<image 12>**  
+ 6. The new StormEvents table was added to the Power BI report.
+ **<image 13>**   
+ 
+ ### Create a Power BI report  
+ 
+ 1. Create a line chart with the total number of events, by putting “Start Time” in the Axis box (not in Date Hierarchy mode) and     EventId in the Values box.  
+ **<image 14>**  
+ 2. Add a Map tile by putting “BeginLat” in the Latitude box and putting “BeginLon” in the Longitude box.  
+ **<image 15>**  
+ 3. Create a Clustered column chart by putting “Event Type” in the Axis box and (count) “Event Id” in the value box.  
+ **<image 16>**  
+ 4. Create 4 separate card tiles with “DeathDirect”, “DeathIndirect”, “InjuriesDirect” and “InjuriesIndirect in the Fields box.  
+ **<image 17>**  
+ 5. Create a pie chart of reporting sources by putting the “Source” in the legend box and putting the (count) “EventId” in the values box.  
+ **<image 18>**  
+ 6. Now arrange the tiles on the canvas and you’re ready to slice and dice.  
+ **<image 19>**  
+ 
+ ### 3 Power BI Connectors  
+ 1. Native Connector for Power BI
+    - Native Connector **->** data explorer **->** Connect **->** Preview Feature (accept) continue.
+    - Cluster: demo12.westus
+    - Database: GitHub
+    - Table: GithubEvent
+    - Import **->** load data in advanced 
+	- Seamless browsing experience   
+	- Data size limitation  
+    - **(Click) Direct Query load data per request** 
+	- Load per request 
+	- Longer response time 
+   - Sign-in **->** connect 
+   - Data sample **->** load 
+   - Drag ID from the Fields on the right side of the screen 
+   - Drag CreatedAt
+   - Drag CreatedAt into ID square 
+2. Blank Query for Power BI
+   - Get Data **->** Blank Query 
+   - Kusto Explorer **->** Tools **->** Query to Power BI (Query & PBI adaptor)
+   - Connect - Organization account **->** use your account 
+   - Click on **->** Advanced editor **->** Delete everything **->** Paste everything 
+3. MS-TDS (SQL) client for Power BI
+   - (ODBS Connector) End Point: Azure  Azure SQL database 
+     - Kusto Cluster as destination (<https://docs.microsoft.com/en-us/azure/data-explorer/power-bi-sql-query>)  
+
+### KQL – Results  
+
+1. How many events are there in Repos that have ‘Azure’ in their name?  
+```  
+// 1. What is count of events in Repos that have ‘Azure’ word in their name?
+GithubEvent
+| where Repo has 'Azure'
+| count  
+``` 
+
+2. What is the total number of Repos?  
+```  
+// 2. What is the amount of the Repos overall?
+GithubEvent
+| summarize dcount(tostring(Repo))  
+```  
+3. Linus Torvalds Actor on GitHub is ‘torvalds’ (Actor.display_login). What are the top 3 event Types he contributes to?  
+```  
+// 3. Linus Torvalds Actor on GitHub is ‘torvalds’ (Actor.display_name). What are top 3 events Types he contributes to?  
+GithubEvent
+| where Actor.display_login == 'torvalds'
+| summarize count() by Type
+| top 3 by count_  
+```  
+4. How many Torvalds are there and how many events they produce?  
+```  
+// 4. How many Torvalds are there and how much events they produce?
+//
+GithubEvent
+| where Actor has 'torvalds'
+| summarize count() by name=tostring(Actor.display_login)
+| where isnotempty(name)  
+```  
+5. What are the top 10 most watched Repos?  
+```  
+//5. What are the top 10 most watched Repos?
+GithubEvent
+| where Type == 'WatchEvent'
+| summarize count() by tostring(Repo.name)
+| top 10 by count_   
+```   
+6. Plot the history of all events for Repos which are the answer for #5.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   
 
