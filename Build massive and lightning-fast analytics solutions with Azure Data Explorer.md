@@ -183,8 +183,8 @@ We’ll use GitHub public data to query using Azure Data Explorer (Kusto) and vi
 
 **<image 01>**  
 
-2. Open (<https://dataexplorer.azure.com/clusters/demo12.westus/databases/GitHub>)  
-  - Cluster URL: (<http://demo12.westus.kusto.windows.net>)  
+2. Open <https://dataexplorer.azure.com/clusters/demo12.westus/databases/GitHub>  
+  - Cluster URL: <http://demo12.westus.kusto.windows.net>  
   - Database: GitHub  
   
 ### Heading Missing
@@ -204,7 +204,7 @@ We’ll use GitHub public data to query using Azure Data Explorer (Kusto) and vi
 Power BI is used to visualize the data. Note that Power BI is a visualization tool with data size limitations. Default: 500,000 records and 700MB data size. 
 
 ### PBI demo script  
-1. Open Lab Environment Details page: (<http://bit.ly/2WCFDdz>)  
+1. Open Lab Environment Details page: <http://bit.ly/2WCFDdz> 
 2. Select **GO TO LAB ENVIRONMENT->**  
 
 ### Connect to Help cluster  
@@ -265,7 +265,7 @@ Power BI is used to visualize the data. Note that Power BI is a visualization to
    - Click on **->** Advanced editor **->** Delete everything **->** Paste everything 
 3. MS-TDS (SQL) client for Power BI
    - (ODBS Connector) End Point: Azure  Azure SQL database 
-     - Kusto Cluster as destination (<https://docs.microsoft.com/en-us/azure/data-explorer/power-bi-sql-query>)  
+     - Kusto Cluster as destination <https://docs.microsoft.com/en-us/azure/data-explorer/power-bi-sql-query>  
 
 ### KQL – Results  
 
@@ -302,39 +302,60 @@ GithubEvent
 ```  
 5. What are the top 10 most watched Repos?  
 ```  
-//5. What are the top 10 most watched Repos?
+// 5. What are the top 10 most watched Repos?
 GithubEvent
 | where Type == 'WatchEvent'
 | summarize count() by tostring(Repo.name)
 | top 10 by count_   
 ```   
 6. Plot the history of all events for Repos which are the answer for #5.  
+```  
+// 6. Plot the history of all events for the past 2 years for Repos coming out #5.
+let repos = GithubEvent
+| where Type == 'WatchEvent'
+| summarize count() by name=tostring(Repo.name)
+| top 10 by count_
+| project name;
+GithubEvent  
+| where Repo.name in (repos)
+| extend repo = tostring(Repo.name)
+| summarize count() by bin(CreatedAt, 1d), repo
+| render timechart  
+```  
+7. Show the top 10 repos by WatchEvent, along with their WatchEvent count and their total events count (hint: use join)  
+```  
+// 7. Show top 10 repos with most Watch Event and their total count of events (hint: use join)
+GithubEvent
+| where Type == 'WatchEvent'
+| summarize WatchCounts = count() by name=tostring(Repo.name)
+| top 10 by WatchCounts 
+| join hint.strategy = broadcast  
+(
+    GithubEvent 
+    | extend repo = tostring(Repo.name)
+    | summarize TotalEvents=count() by repo
+) on $left.name == $right.repo
+| project repo, TotalEvents, WatchCounts 
+| order by TotalEvents  
+```  
+## After the hands-on lab
 
+Duration: 10 minutes
 
+In this exercise, you will de-provision all Azure resources that were created in support of this hands-on lab.
 
+### Task 1: Delete Azure resource groups
 
+1. In the Azure portal, select **Resource groups** from the left-hand menu, and locate and delete the following resource groups.
 
+    - ODL-lab-SUFFIX
 
+### Task 2: Delete WebHooks and Service Integrations
 
+1. In your Azure Database Explorer Cluster :
 
+    - Delete the Databases created.
+    - Delete the Data Connection you created for ingeston .
 
+You should follow all steps provided *after* attending the Hands-on lab.
 
-
-
-
-
-
-
-  
-  
-
-
- 
-
-`
-
- 
-  
- 
-
- 
