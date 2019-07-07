@@ -35,12 +35,11 @@ Walk away with a solution for your frustrated customers, so they can make immedi
 
       - Connect with the Azure **Credentials**:  
    
- ![+ Create a resource is highlighted in the navigation pane of the Azure portal, and Everything is highlighted to the right. On the Everything blade to the right, jenkins is highlighted in the search box, and the Jenkins row is highlighted in the search results.](media/image01.png "Azure Portal")
+![+ Create a resource is highlighted in the navigation pane of the Azure portal, and Everything is highlighted to the right. On the Everything blade to the right, jenkins is highlighted in the search box, and the Jenkins row is highlighted in the search results.](media/image01.png "Azure Portal")
 
-   
-      - The portal opens with your credentials:  
+   - The portal opens with your credentials:  
       
-      **<image 02>**
+ ![portal will bw opened with the credentials provide.](media/image02.png "Azure Portal")
     
  3.	Search and select Azure Data Explorer Clusters.
    
