@@ -294,7 +294,7 @@ Power BI is used to visualize the data. Note that Power BI is a visualization to
    - (ODBS Connector) End Point: Azure  Azure SQL database 
      - Kusto Cluster as destination <https://docs.microsoft.com/en-us/azure/data-explorer/power-bi-sql-query>  
 
-### KQL–Results  
+### KQL–Results   
 
 1. How many events are there in Repos that have ‘Azure’ in their name?  
 ```  
