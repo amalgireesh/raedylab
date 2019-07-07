@@ -21,7 +21,8 @@ Walk away with a solution for your frustrated customers, so they can make immedi
      - [Connect to Help cluster](#Connect-to-Help-cluster)  
      - [Create Power BI report](#Create-a-Power-BI-report)
       
-   - [KQL – Results](#KQL–-Results)
+   - [KQL – Results](#KQL–-Results)  
+   - [After the hands-on lab](#After-the-hands-on-lab)
    
   <!-- TOC -->   
 ## Infrastructure  
@@ -293,7 +294,7 @@ Power BI is used to visualize the data. Note that Power BI is a visualization to
    - (ODBS Connector) End Point: Azure  Azure SQL database 
      - Kusto Cluster as destination <https://docs.microsoft.com/en-us/azure/data-explorer/power-bi-sql-query>  
 
-### KQL – Results  
+### KQL–Results  
 
 1. How many events are there in Repos that have ‘Azure’ in their name?  
 ```  
