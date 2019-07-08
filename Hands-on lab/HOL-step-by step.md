@@ -23,7 +23,6 @@ Walk away with a solution for your frustrated customers, so they can make immedi
      - [Create Power BI report](#Create-a-Power-BI-report)  
       
    - [KQL-Results](#kqlresults)  
-   - [After the hands-on lab](#After-the-hands-on-lab)
    
   <!-- TOC -->   
 ## Infrastructure  
@@ -366,24 +365,3 @@ GithubEvent
 | project repo, TotalEvents, WatchCounts 
 | order by TotalEvents  
 ```  
-## After the hands-on lab
-
-Duration: 10 minutes
-
-In this exercise, you will de-provision all Azure resources that were created in support of this hands-on lab.
-
-### Task 1: Delete Azure resource groups
-
-1. In the Azure portal, select **Resource groups** from the left-hand menu, and locate and delete the following resource groups.
-
-    - ODL-lab-SUFFIX
-
-### Task 2: Delete WebHooks and Service Integrations
-
-1. In your Azure Database Explorer Cluster :
-
-    - Delete the Databases created.
-    - Delete the Data Connection you created for ingeston .
-
-You should follow all steps provided *after* attending the Hands-on lab
-
